@@ -1,26 +1,32 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int lowestValueLine(int rows, int columns, int matrix[rows][columns]) {
-	int lowestValue = matrix[0][0];
-	int valueLine = 0;
+int lowestValue(int rowsColumns, int matrix[rowsColumns][rowsColumns]) {
+	int lowest = matrix[0][0];
+	int line = 0;
 
-	for(int i = 0; i < rows; i++) {
-		for(int j = 0; j < columns; j++) {
-			if(lowestValue > matrix[i][j]) {
-				lowestValue = matrix[i][j];
-				valueLine = i;
+	for(int i = 0; i < rowsColumns; i++) {
+		for(int j = 0; j < rowsColumns; j++) {
+			if(lowest > matrix[i][j]) {
+				lowest = matrix[i][j];
+				line = i;
 			}
 		}
 	}
 
-	return valueLine;
+	return line;
 }
 
 int main(void) {
-	int testMatrix[3][3] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}};
-	int theLine = lowestValueLine(3, 3, testMatrix);
-	printf("Line with lowest value: %d\n", theLine);
+	printf("|----------//---------- EXERCÍCIO 01 ----------//----------|\n");
+
+	int threeSqrdMatrix[3][3] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}};
+	int fourSqrdMatrix[4][4] = {{1, 2, 3, 4}, {0, 9, 7, 8}, {1, 3, 6, 5}, {9, 9, 3, 5}};
+	
+	int lowestValueLine = lowestValue(3, threeSqrdMatrix);
+	printf("Test 01\nLine with lowest value: %d.\n", lowestValueLine);
+	
+	lowestValueLine = lowestValue(4, fourSqrdMatrix);
+	printf("\nTest 02\nLine with lowest value: %d.\n\n", lowestValueLine);
 
 	return 0;
 }

@@ -14,5 +14,5 @@ Nome: Pedro Henrique Araujo Farias	TIA: 32246994
 	03. COMO COMPROVAR QUE OS RESULTADOS PROPOSTOS FORAM ALCANÇADOS?
 	Como a proposta do Laboratório é introduzir o aluno ao terminal Linux no ambiente da AWS, o arquivo
 	HelloWorld.c apenas gera um executável que imprime a mensagem "Hello, World!" no terminal. Caso 
-	essa mensagem seja devidamente exibida, contasta-se o êxito no desenvolvimento da atividade proposta
+	essa mensagem seja devidamente exibida, constata-se o êxito no desenvolvimento da atividade proposta
 	neste laboratório.
