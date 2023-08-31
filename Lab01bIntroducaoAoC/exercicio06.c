@@ -3,36 +3,52 @@
 
 int** transpose(int rows, int columns, int matrix[rows][columns]) {
 	int** transpose = (int**) calloc(columns, sizeof(int*));
-	for(int i = 0; i < rows; i++) {
-		transpose[i] = (int*) calloc(rows, sizeof(int));
-	}
+    	for(int i = 0; i < columns; i++) {
+        	transpose[i] = (int*) calloc(rows, sizeof(int));
+    	}
 
-	for(int j = 0; j < rows; j++) {
-		for(int k = 0; k < columns; k++) {
-			transpose[k][j] = matrix[j][k];
-		}
-	}
+    	for(int m = 0; m < rows; m++) {
+        	for(int n = 0; n < columns; n++) {
+            	transpose[n][m] = matrix[m][n];
+        	}
+    	}
 
-	return transpose;
+    	return transpose;
 }
 
 int main(void) {
-	int matrixA[2][3] = {{1, 2, 3}, {4, 5, 6}};
-	int** matrixB = transpose(2, 3, matrixA);
+	printf("|----------//---------- EXERCÍCIO 06 ----------//----------|\n");
+    	int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};
 
-	for(int i = 0; i < 3; i++) {
-		for(int j = 0; j < 2; j++) {
-			printf("%d ", matrixB[i][j]);
+	printf("Matriz original\n");
+
+	for(int a = 0; a < 2; a++) {
+		for(int b = 0; b < 3; b++) {
+			printf("%d ", matrix[a][b]);
 		}
-
+		
 		printf("\n");
 	}
 
-	for(int l = 0; l < 3; l++) {
-		free(matrixB[l]);
-	}
+    	int** transposeMatrix = transpose(2, 3, matrix);
 
-	free(matrixB);
+	printf("\nMatriz transposta\n");
 
-	return 0;	
+    	for(int i = 0; i < 3; i++) {
+        	for(int j = 0; j < 2; j++) {
+            	printf("%d ", transposeMatrix[i][j]);
+        	}
+
+        	printf("\n");
+    	}
+
+    	for(int p = 0; p < 3; p++) {
+        	free(transposeMatrix[p]);
+    	}
+
+    	free(transposeMatrix);
+
+	printf("|----------//---------- //----------// ----------//----------|\n\n");
+
+    	return 0;
 }
