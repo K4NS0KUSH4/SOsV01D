@@ -2,23 +2,17 @@
 #include <string.h>
 
 void removeChar(char string[], int index) {
-	int count = 0;
-	
-	while(count < index) {
-		count++;
-	}
-
-	for(int i = count; i < strlen(string); i++) {
+	for(int i = index; i < strlen(string); i++) {
 		string[i] = string[i+1];
 	}
 }
 
 int main(void) {
-	char string[] = "Pedro";
+	char string[] = "Episode 25: The beast that shouted 'I' at the heart of the world";
 	printf("|----------//---------- EXERCÍCIO 13 ----------//----------|\n");
 	printf("String teste: %s\n", string);
-	printf("Caractere na posição 2 (string[2]): %c\n", string[2]);
-	removeChar(string, 2);
+	printf("Caractere na posição 25 (string[25]): %c\n", string[25]);
+	removeChar(string, 25);
 	printf("String após remoção do caractere: %s\n", string);
 	printf("|---------//---------- //----------// ----------//----------|\n\n");
 	
