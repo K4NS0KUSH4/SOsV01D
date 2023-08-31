@@ -27,8 +27,8 @@ int main(void) {
 
 	printf("|----------//---------- EXERCÍCIO 02 ----------//----------|\n");
 	printf("N1: 9.5 | N2: 7.5 | N3: 8.0 | ME: 7.0\n");
-
 	printf("Média obtida: %.2f | Conceito: %c\n", mediaAproveitamento, conceito);
+	printf("|----------//---------- //----------// ----------//----------|\n\n");
 
 	return 0;
 }

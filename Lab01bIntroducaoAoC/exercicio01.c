@@ -26,7 +26,9 @@ int main(void) {
 	printf("Test 01\nLine with lowest value: %d.\n", lowestValueLine);
 	
 	lowestValueLine = lowestValue(4, fourSqrdMatrix);
-	printf("\nTest 02\nLine with lowest value: %d.\n\n", lowestValueLine);
+	printf("\nTest 02\nLine with lowest value: %d.\n", lowestValueLine);
 
+	printf("|---------//---------- //----------// ----------//----------|\n\n");
+	
 	return 0;
 }
