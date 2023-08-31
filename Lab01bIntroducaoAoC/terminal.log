@@ -1,0 +1,181 @@
+Script started on 2023-08-31 18:34:39+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="113" LINES="35"]
+]0;ec2-user@ip-172-31-43-194:~/SOsV01D/Lab01bIntroducaoAoC[?2004h[ec2-user@ip-172-31-43-194 Lab01bIntroducaoAoC]$ ls
+[?2004lexercicio01.c  exercicio04.c  exercicio07.c  exercicio10.c  exercicio13.c
+exercicio02.c  exercicio05.c  exercicio08.c  exercicio11.c  exercicio14.c
+exercicio03.c  exercicio06.c  exercicio09.c  exercicio12.c  terminal.log
+]0;ec2-user@ip-172-31-43-194:~/SOsV01D/Lab01bIntroducaoAoC[?2004h[ec2-user@ip-172-31-43-194 Lab01bIntroducaoAoC]$ [7mgcc exercicio01.c -o ex01.out && gcc exercicio02.c -o ex02.out &[27m[7m&[27m[7m gcc exercicio03.c -o ex03.out && gcc exercicio04.c -o ex04.out && gcc exercicio05.c -o ex05.out && gcc exercici[27m[7mo[27m[7m06.c -o ex06.out && gcc exercicio07.c -o ex07.out[27m[A[Agcc exercicio01.c -o ex01.out && gcc exercicio02.c -o ex02.out && gcc exercicio03.c -o ex03.out && gcc exercicio04.c -o ex04.out && gcc exercicio05.c -o ex05.out && gcc exercicio06.c -o ex06.out && gcc exercicio07.c -o ex07.out
+[?2004l]0;ec2-user@ip-172-31-43-194:~/SOsV01D/Lab01bIntroducaoAoC[?2004h[ec2-user@ip-172-31-43-194 Lab01bIntroducaoAoC]$ gcc exercicio08.c -o ex08.out && gcc exercicio09.c -o ex09.out & & gcc exercicio10.c -o ex10.out && gcc exercicio11.c -o ex11.out && gcc exercicio12.c -o ex12.out && gcc exercici o13.c -o ex13.out && gcc exercicio14.c -o ex14.out
+[?2004l]0;ec2-user@ip-172-31-43-194:~/SOsV01D/Lab01bIntroducaoAoC[?2004h[ec2-user@ip-172-31-43-194 Lab01bIntroducaoAoC]$ .[Kls
+[?2004l[0m[01;32mex01.out[0m  [01;32mex05.out[0m  [01;32mex09.out[0m  [01;32mex13.out[0m       exercicio03.c  exercicio07.c  exercicio11.c  terminal.log
+[01;32mex02.out[0m  [01;32mex06.out[0m  [01;32mex10.out[0m  [01;32mex14.out[0m       exercicio04.c  exercicio08.c  exercicio12.c
+[01;32mex03.out[0m  [01;32mex07.out[0m  [01;32mex11.out[0m  exercicio01.c  exercicio05.c  exercicio09.c  exercicio13.c
+[01;32mex04.out[0m  [01;32mex08.out[0m  [01;32mex12.out[0m  exercicio02.c  exercicio06.c  exercicio10.c  exercicio14.c
+]0;ec2-user@ip-172-31-43-194:~/SOsV01D/Lab01bIntroducaoAoC[?2004h[ec2-user@ip-172-31-43-194 Lab01bIntroducaoAoC]$ ./ex01.out >> output.txt && ./ex02.out >> output.txt && ./ex03.o ut >> output.txt && ./ex04.out >> output.txt && ./ex05.out >> output.txt && ./ex06.out >> output.txt && ./ex07.ou t >> output.txt && ./ex07.out >> output.txt[1P[1@8[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C && ./ex09.out >> output.txt && ./ex10.out >> output.txt && ./ex11.out  >>[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kut  >> output.txt && ./ex12.out >> output.txt && ./ex13.out >> output.txt && ./ex14.out >> output.txt
+[?2004l]0;ec2-user@ip-172-31-43-194:~/SOsV01D/Lab01bIntroducaoAoC[?2004h[ec2-user@ip-172-31-43-194 Lab01bIntroducaoAoC]$ cat output.txt 
+[?2004l|----------//---------- EXERCÍCIO 01 ----------//----------|
+Test 01
+Line with lowest value: 2.
+
+Test 02
+Line with lowest value: 1.
+|---------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 02 ----------//----------|
+N1: 9.5 | N2: 7.5 | N3: 8.0 | ME: 7.0
+Média obtida: 7.93 | Conceito: B
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 03 ----------//----------|
+Teste 01
+1 2 3 4 5 6 7 8 9 
+2 3 4 5 6 7 8 
+3 4 5 6 7 
+4 5 6 
+5 
+
+Teste 02
+1 2 3 4 5 6 7 
+2 3 4 5 6 
+3 4 5 
+4 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 04 ----------//----------|
+Pedro
+Yasmin
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 05 ----------//----------|
+Matriz original
+9 8 7 
+6 5 4 
+
+Multiplicando os elementos da segunda linha por 3:
+9 8 7 
+18 15 12 
+
+Matriz original
+1 2 3 
+4 5 6 
+7 8 9 
+10 11 12 
+
+Multiplicando os elementos da terceira coluna por 5:
+1 2 15 
+4 5 30 
+7 8 45 
+10 11 60 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 06 ----------//----------|
+Matriz original
+1 2 3 
+4 5 6 
+
+Matriz transposta
+1 4 
+2 5 
+3 6 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 07 ----------//----------|
+Nome: Pedro | Idade: 19 | Peso: 75.00 | Altura: 1.87
+Nome: Lucas | Idade: 20 | Peso: 86.75 | Altura: 1.95
+Nome: Paulo | Idade: 25 | Peso: 70.55 | Altura: 1.75
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 08 ----------//----------|
+Matriz original
+1 2 3 
+4 5 6 
+
+Matriz transposta
+1 4 
+2 5 
+3 6 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 09 ----------//----------|
+Matriz original
+1 2 -3 
+-4 -5 6 
+-7 8 -9 
+
+Mudando negativos para seu módulo:
+1 2 3 
+4 5 6 
+7 8 9 
+|----------//---------- //----------// ----------//---------|
+
+|----------//---------- EXERCÍCIO 10 ----------//----------|
+Matriz original
+9 8 7 
+6 5 4 
+
+Multiplicando os elementos da segunda linha por 3:
+9 8 7 
+18 15 12 
+
+Matriz original
+1 2 3 
+4 5 6 
+7 8 9 
+10 11 12 
+
+Multiplicando os elementos da terceira coluna por 5:
+1 2 15 
+4 5 30 
+7 8 45 
+10 11 60 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 11 ----------//----------|
+Matriz A original
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+
+Armazenando a soma dos elementos de L1 e L2 em L2
+1 2 3 4 
+6 8 10 12 
+9 10 11 12 
+
+Matriz B original
+12 11 10 9 
+8 7 6 5 
+4 3 2 1 
+
+Armazenando o produto dos elementos de L1 e L2 em L2
+12 11 10 9 
+96 77 60 45 
+4 3 2 1 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 12 ----------//----------|
+String: Neon Genesis Evangelion | Char: v
+Posição do caractere: 14
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 13 ----------//----------|
+String teste: Episode 25: The beast that shouted 'I' at the heart of the world
+Caractere na posição 25 (string[25]): t
+String após remoção do caractere: Episode 25: The beast tha shouted 'I' at the heart of the world
+|---------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 14 ----------//----------|
+String: The beast that shouted 'I' at the heart of the world
+Adicionando caractere 't' na posição 25 (string[25])
+Resultado: The beast that shouted 'It' at the heart of the world
+|----------//---------- //----------// ----------//----------|
+
+]0;ec2-user@ip-172-31-43-194:~/SOsV01D/Lab01bIntroducaoAoC[?2004h[ec2-user@ip-172-31-43-194 Lab01bIntroducaoAoC]$ ls
+[?2004l[0m[01;32mex01.out[0m  [01;32mex05.out[0m  [01;32mex09.out[0m  [01;32mex13.out[0m       exercicio03.c  exercicio07.c  exercicio11.c  output.txt
+[01;32mex02.out[0m  [01;32mex06.out[0m  [01;32mex10.out[0m  [01;32mex14.out[0m       exercicio04.c  exercicio08.c  exercicio12.c  terminal.log
+[01;32mex03.out[0m  [01;32mex07.out[0m  [01;32mex11.out[0m  exercicio01.c  exercicio05.c  exercicio09.c  exercicio13.c
+[01;32mex04.out[0m  [01;32mex08.out[0m  [01;32mex12.out[0m  exercicio02.c  exercicio06.c  exercicio10.c  exercicio14.c
+]0;ec2-user@ip-172-31-43-194:~/SOsV01D/Lab01bIntroducaoAoC[?2004h[ec2-user@ip-172-31-43-194 Lab01bIntroducaoAoC]$ exit
+[?2004lexit
+
+Script done on 2023-08-31 18:41:38+00:00 [COMMAND_EXIT_CODE="0"]

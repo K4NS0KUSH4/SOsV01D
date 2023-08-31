@@ -17,7 +17,7 @@ int** transpose(int rows, int columns, int matrix[rows][columns]) {
 }
 
 int main(void) {
-	printf("|----------//---------- EXERCÍCIO 06 ----------//----------|\n");
+	printf("|----------//---------- EXERCÍCIO 08 ----------//----------|\n");
     	int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};
 
 	printf("Matriz original\n");

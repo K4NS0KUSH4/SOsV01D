@@ -1,0 +1,156 @@
+|----------//---------- EXERCÍCIO 01 ----------//----------|
+Test 01
+Line with lowest value: 2.
+
+Test 02
+Line with lowest value: 1.
+|---------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 02 ----------//----------|
+N1: 9.5 | N2: 7.5 | N3: 8.0 | ME: 7.0
+Média obtida: 7.93 | Conceito: B
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 03 ----------//----------|
+Teste 01
+1 2 3 4 5 6 7 8 9 
+2 3 4 5 6 7 8 
+3 4 5 6 7 
+4 5 6 
+5 
+
+Teste 02
+1 2 3 4 5 6 7 
+2 3 4 5 6 
+3 4 5 
+4 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 04 ----------//----------|
+Pedro
+Yasmin
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 05 ----------//----------|
+Matriz original
+9 8 7 
+6 5 4 
+
+Multiplicando os elementos da segunda linha por 3:
+9 8 7 
+18 15 12 
+
+Matriz original
+1 2 3 
+4 5 6 
+7 8 9 
+10 11 12 
+
+Multiplicando os elementos da terceira coluna por 5:
+1 2 15 
+4 5 30 
+7 8 45 
+10 11 60 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 06 ----------//----------|
+Matriz original
+1 2 3 
+4 5 6 
+
+Matriz transposta
+1 4 
+2 5 
+3 6 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 07 ----------//----------|
+Nome: Pedro | Idade: 19 | Peso: 75.00 | Altura: 1.87
+Nome: Lucas | Idade: 20 | Peso: 86.75 | Altura: 1.95
+Nome: Paulo | Idade: 25 | Peso: 70.55 | Altura: 1.75
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 08 ----------//----------|
+Matriz original
+1 2 3 
+4 5 6 
+
+Matriz transposta
+1 4 
+2 5 
+3 6 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 09 ----------//----------|
+Matriz original
+1 2 -3 
+-4 -5 6 
+-7 8 -9 
+
+Mudando negativos para seu módulo:
+1 2 3 
+4 5 6 
+7 8 9 
+|----------//---------- //----------// ----------//---------|
+
+|----------//---------- EXERCÍCIO 10 ----------//----------|
+Matriz original
+9 8 7 
+6 5 4 
+
+Multiplicando os elementos da segunda linha por 3:
+9 8 7 
+18 15 12 
+
+Matriz original
+1 2 3 
+4 5 6 
+7 8 9 
+10 11 12 
+
+Multiplicando os elementos da terceira coluna por 5:
+1 2 15 
+4 5 30 
+7 8 45 
+10 11 60 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 11 ----------//----------|
+Matriz A original
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+
+Armazenando a soma dos elementos de L1 e L2 em L2
+1 2 3 4 
+6 8 10 12 
+9 10 11 12 
+
+Matriz B original
+12 11 10 9 
+8 7 6 5 
+4 3 2 1 
+
+Armazenando o produto dos elementos de L1 e L2 em L2
+12 11 10 9 
+96 77 60 45 
+4 3 2 1 
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 12 ----------//----------|
+String: Neon Genesis Evangelion | Char: v
+Posição do caractere: 14
+|----------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 13 ----------//----------|
+String teste: Episode 25: The beast that shouted 'I' at the heart of the world
+Caractere na posição 25 (string[25]): t
+String após remoção do caractere: Episode 25: The beast tha shouted 'I' at the heart of the world
+|---------//---------- //----------// ----------//----------|
+
+|----------//---------- EXERCÍCIO 14 ----------//----------|
+String: The beast that shouted 'I' at the heart of the world
+Adicionando caractere 't' na posição 25 (string[25])
+Resultado: The beast that shouted 'It' at the heart of the world
+|----------//---------- //----------// ----------//----------|
+

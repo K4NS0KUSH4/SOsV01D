@@ -31,7 +31,7 @@ void printMatrix(int rows, int columns, int matrix[rows][columns]) {
 }
 
 int main(void) {
-	printf("|----------//---------- EXERCÍCIO 05 ----------//----------|\n");
+	printf("|----------//---------- EXERCÍCIO 10 ----------//----------|\n");
 	int bidimensionalArrayA[2][3] = {{9, 8, 7}, {6, 5, 4}};
 	int bidimensionalArrayB[4][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};
 	printf("Matriz original\n");
