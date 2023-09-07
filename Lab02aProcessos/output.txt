@@ -1,0 +1,33 @@
+||-------///-----///-------|| EXEMPLO 01: SLIDE 02 ||-------\\\-----\\\-------||
+I am process 1026
+My parent is 959
+
+||-------///-----///-------|| EXEMPLO 02: SLIDE 05 ||-------\\\-----\\\-------||
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 R  1000    1030     959  0  80   0 -  2521 -      pts/0    00:00:00 ps
+
+||-------///-----///-------|| EXEMPLO 03: SLIDE 07 ||-------\\\-----\\\-------||
+I am process 1040 and my x is 1
+I am process 1041 and my x is 1
+
+||-------///-----///-------|| EXEMPLO 04: SLIDE 08 ||-------\\\-----\\\-------||
+I am parent 1056
+I am child 1057
+
+||-------///-----///-------|| EXEMPLO 05: SLIDE 09 ||-------\\\-----\\\-------||
+I am parent 1064, ID = 1064
+I am child 1065, ID = 1064
+
+||-------///-----///-------|| EXEMPLO 06:  STDOUT  ||-------\\\-----\\\-------||
+i:1  process ID:1087  parent ID:959  child ID:1088
+i:2  process ID:1088  parent ID:1  child ID:1089
+i:3  process ID:1089  parent ID:1  child ID:1090
+i:4  process ID:1090  parent ID:1  child ID:1091
+i:5  process ID:1091  parent ID:1  child ID:1092
+i:6  process ID:1092  parent ID:1  child ID:1093
+i:7  process ID:1093  parent ID:1  child ID:1094
+i:8  process ID:1094  parent ID:1  child ID:1095
+i:9  process ID:1095  parent ID:1  child ID:1096
+i:10  process ID:1096  parent ID:1  child ID:
+
+||-------///-----///-------|| EXEMPLO 07:  STDERR  ||-------\\\-----\\\-------||
