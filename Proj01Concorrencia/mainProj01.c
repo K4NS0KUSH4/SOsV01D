@@ -11,7 +11,7 @@ typedef struct { // Defining struct for an account.
 } account;
 
 // Global variables to be acessed by threads.
-int numOfThreads;
+account from, to;
 int transactionAmount;
 int numOfTransactions;
 int successfulTransactions;
@@ -37,25 +37,27 @@ void updateBalance(account* origin, account* destiny) { // Auxiliar function.
     printf("DESTINY BALANCE: %d\n\n", destiny->balance);
 }
 
-void* transaction(void* accounts) {
-    account** accountArray = (account**) accounts;
+void* transaction(void* threadNum) {
+    long thrNum = (long) threadNum;
     int direction = rand() % 2; // If 0, FROM >>> TO. Otherwise, TO >>> FROM.
 
     pthread_mutex_lock(&mutex); // Since a thread has reached this area, it'll be locked to other threads.
 
-    numOfTransactions++;
+    if( (*(&from)).balance != 0 && (*(&to)).balance != 0) { // If accounts have no balance, no transaction will be executed
+        numOfTransactions++; // Incremeting number of transactions for posterior feedback
 
-    printf("TRANSACTION NUMBER %d\n", numOfTransactions);
-    printf("Executed by thread %ld\n", pthread_self());
+        printf("TRANSACTION NUMBER %d\n", numOfTransactions);
+        printf("Executed by thread (%ld) ID: %ld\n", thrNum, pthread_self());
 
-    if(direction == 0) {
-        printf("FROM >>> TO\n");
-        updateBalance(accountArray[0], accountArray[1]);
-    }
+        if(direction == 0) { // FROM >>> TO transaction
+            printf("FROM >>> TO\n");
+            updateBalance(&from, &to);
+        }
 
-    else {
-        printf("TO >>> FROM\n");
-        updateBalance(accountArray[1], accountArray[0]);
+        else { // TO >>> FROM transaction
+            printf("TO >>> FROM\n");
+            updateBalance(&to, &from);
+        }
     }
 
     pthread_mutex_unlock(&mutex); // Since a thread has reached this area, others will have access to the critical section.
@@ -64,14 +66,11 @@ void* transaction(void* accounts) {
 }
 
 int main(int argc, char* argv[]) {
-    if(argc != 3) { // If user doesn't give proper arguments in command line.
-        fprintf(stderr, "Invalid arguments. Usage: main <number of processes> <transactions value>");
+    if(argc != 5) { // If user doesn't give proper arguments in command line.
+        fprintf(stderr, "Invalid arguments. Usage: <program> <number of processes> <transactions value> <FROM balance> <TO balance>\n\n");
         return 1;
     }
 
-    account from, to;
-    from.balance = 100; // Starting values for FROM and TO balances.
-    to.balance = 100;
     numOfTransactions = 0; // Stores number of executed transactions.
     successfulTransactions = 0; // Stores number of transactions executed successfully.
     long thread; // A regular iterator. We use long for 64-bit systems.
@@ -84,23 +83,25 @@ int main(int argc, char* argv[]) {
 
     // Note: char* argv[] is an array of strings that stores command line arguments. 
     // argv[0] stores the name of the program executed.
-    numOfThreads = strtol(argv[1], NULL, 10); // Casts first argument in command line to long.
-    transactionAmount = strtof(argv[2], NULL); // Casts second argument in command line to float. 
+    int numOfThreads = strtol(argv[1], NULL, 10); // Casts first argument in command line to long integer.
+    transactionAmount = strtol(argv[2], NULL, 10); // Casts second argument in command line to long integer.
+    from.balance = strtol(argv[3], NULL, 10); // Casts third argument in command line to long integer.
+    to.balance = strtol(argv[4], NULL, 10); // Casts fourth argument in command line to long integer.
 
-    // Allocating memory for an array of threads.
+    // Allocating memory for an array of threds.
     pthread_t* threads = malloc(numOfThreads * sizeof(pthread_t));
 
-    pthread_mutex_init(&mutex, NULL); // Initing mutex for availing race conditions.
+    pthread_mutex_init(&mutex, NULL); // Mutex for availing race conditions.
 
     for(thread = 0; thread < numOfThreads; thread++) { // Creating threads which will run transaction function.
-        pthread_create(&threads[thread], NULL, transaction, (void*) argAccounts);
+        pthread_create(&threads[thread], NULL, transaction, (void*) thread);
     }
 
     for(thread = 0; thread < numOfThreads; thread++) { // By the time a thread has completed its work, others may not.
         pthread_join(threads[thread], NULL); // So they'll wait for every single thread to complete its job.
     }
 
-    pthread_mutex_destroy(&mutex);
+    pthread_mutex_destroy(&mutex); // Destroying mutex used for race condition solving.
     free(threads); // Frees allocated memory for threads.
 
     // End of transactions feedback.
@@ -111,6 +112,10 @@ int main(int argc, char* argv[]) {
     printf("%d transactions were executed.\n", numOfTransactions);
     printf("%d succesfully. %d failed.\n\n", successfulTransactions, numOfTransactions - successfulTransactions);
 
+    if((*(&from)).balance != 0 && (*(&to)).balance != 0) {
+        printf("%d transactions weren't enough to reduce balances to zero.\n\n", numOfTransactions);
+    }
+
     return 0;
-}
+}  
 
