@@ -67,7 +67,7 @@ void* transaction(void* threadNum) {
 
 int main(int argc, char* argv[]) {
     if(argc != 5) { // If user doesn't give proper arguments in command line.
-        fprintf(stderr, "Invalid arguments. Usage: <program> <number of processes> <transactions value> <FROM balance> <TO balance>\n\n");
+        fprintf(stderr, "Invalid arguments. Usage: <program> <number of threads> <transactions value> <FROM balance> <TO balance>\n\n");
         return 1;
     }
 
