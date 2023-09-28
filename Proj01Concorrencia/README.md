@@ -7,9 +7,9 @@
 <p>Sendo assim, o objetivo do projeto é propor uma condição de corrida para garantir que as transações estejam sempre sincronizadas entre si, isto é, que estas sempre acessem os dados atualizados de saldo das contas bancárias.</p>
 
 <h2>Desenvolvimento</h2>
-<p>Como proposta de solução ao problema apresentado, foi implementada uma abordagem que se baseia na utilização de <i><strong>threads</strong></i> e do <i><strong>mutex</strong></i>:</p>
+<p>Como proposta de solução ao problema apresentado, foi implementada uma abordagem que se baseia na utilização de <i><strong>threads</strong></i>, as quais garantirão a simultaneidade das transações, e do <i><strong>mutex</strong></i>:</p>
 <ul>
-  <li>Cada <i>thread</i> será responsável por executar uma transação;</li>
+  <li>Cada <i>thread</i> será responsável por executar uma transação, sendo as múltiplas transações <strong>simultâneas</strong>;</li>
   <li>A partir do <i>mutex</i>, será estabelecida uma condição de corrida que manterá as transações sincronizadas entre si.</li>
 </ul>
 <p>De acordo com um dos requisitos do enunciado do projeto, o fluxo de transação pode ocorrer da conta FROM para a conta TO, bem como da conta TO para a conta FROM. Para implementar esta <i>feature</i>, foi implementada uma lógica que determina o fluxo de transação de modo <strong>aleatório</strong>.</p>
@@ -51,7 +51,7 @@
 
 <br>
 
-<p>Para acessar alguns dos testes executados previamente, acesse os seguintes arquivos de log:</p>
+<p>Para acessar alguns dos testes executados previamente que <strong>comprovam o êxito da solução proposta</strong>, acesse os seguintes arquivos de log:</p>
 <ul>
   <li><a href="log100threads.txt">Execução com 100 <i>threads</i></a>;</li>
   <li><a href="log500threads.txt">Execução com 500 <i>threads</i></a>;</li>
