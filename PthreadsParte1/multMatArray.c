@@ -39,7 +39,6 @@ void printMatrix(int argLines, int argColumns, int argMatrix[argLines][argColumn
 
 int main() {
     pthread_t* threadArray = malloc(matrixLines * sizeof(pthread_t));
-    int* result = malloc(matrixLines * sizeof(int));
 
     for(long line = 0; line < matrixLines; line++) {
         pthread_create(&threadArray[line], NULL, Pth_mat_vect, (void*) line);
