@@ -4,6 +4,8 @@ NOME: Pedro Henrique Araujo Farias
 
 <h2>Evidências de compilação e execução das atividades no ambiente AWS</h2>
 <img src="https://github.com/K4NS0KUSH4/SOsV01D/blob/main/Lab03PthreadsParte1/assets/pthreads1compilacao.png" alt="Compilação e execução dos arquivos no ambiente AWS.">
+<p>Para <strong>compilar o programa</strong> no ambiente AWS, basta executar o comando <strong>gcc nomedoarquivo.c -o nomedoarquivo.bin</strong>. Assim, o compilador gcc gerará um arquivo executável no terminal <i>Linux</i>.</p>
+<p>Para <strong>executar o programa</strong> no ambiente AWS, basta acessar o diretório do arquivo e executar o comando <strong>./nomedoarquivo.bin</strong>.</p>
 
 <h2>Comprovando êxito nos resultados obtidos</h2>
 <p>A abordagem convencional para o problema da multiplicação matriz-vetor é tratar o vetor como uma <strong>matriz de colunas</strong> e, então, realizar a multiplicação destas.</p>
