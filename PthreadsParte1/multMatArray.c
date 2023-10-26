@@ -12,7 +12,8 @@ int matrix[3][4] = {
 };
 
 int array[4] = {1, 2, 3, 4};
-
+int matrixLines = sizeof(matrix)/sizeof(matrix[0]);
+int matrixColumns = sizeof(matrix[0])/sizeof(int);
 int result[3];
 
 void* Pth_mat_vect(void* threadNum) {
@@ -37,9 +38,8 @@ void printMatrix(int argLines, int argColumns, int argMatrix[argLines][argColumn
 }
 
 int main() {
-    int matrixLines = sizeof(matrix)/sizeof(matrix[0]);
-    int matrixColumns = sizeof(matrix[0])/sizeof(int);
     pthread_t* threadArray = malloc(matrixLines * sizeof(pthread_t));
+    int* result = malloc(matrixLines * sizeof(int));
 
     for(long line = 0; line < matrixLines; line++) {
         pthread_create(&threadArray[line], NULL, Pth_mat_vect, (void*) line);
