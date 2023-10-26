@@ -5,13 +5,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int matrix[3][3] = {
-    {1, 2, 3},
-    {4, 5, 6},
-    {7, 8, 9}
+int matrix[3][4] = {
+    {1, 2, 3, 4},
+    {5, 6, 7, 8},
+    {9, 10, 11, 12}
 };
 
-int array[3] = {1, 2, 3};
+int array[4] = {1, 2, 3, 4};
 
 int result[3];
 
@@ -49,7 +49,9 @@ int main() {
         pthread_join(threadArray[i], NULL);
     }
 
-    printMatrix(matrixLines, matrixColumns, result);
+    for(int k = 0; k < matrixColumns; k++) {
+	printf("%d ", result[k]);
+    }
 
     return 0;
 }
