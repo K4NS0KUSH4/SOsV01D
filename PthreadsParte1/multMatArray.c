@@ -44,12 +44,13 @@ int main() {
 
     printf("Matriz exemplo: \n");
     printMatrix(matrixLines, matrixColumns, matrix);
+    printf("\n");
 
     printf("Vetor exemplo: ");
     for(int l = 0; l < matrixLines; l++) {
         printf("%d ", array[l]);
     }
-    printf("\n");
+    printf("\n\n");
 
     for(long line = 0; line < matrixLines; line++) {
         pthread_create(&threadArray[line], NULL, Pth_mat_vect, (void*) line);
