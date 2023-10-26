@@ -69,5 +69,7 @@ int main() {
     }
     printf("\n");
 
+    free(threadArray);
+
     return 0;
 }
