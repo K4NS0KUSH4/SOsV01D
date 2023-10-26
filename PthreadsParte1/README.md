@@ -8,7 +8,7 @@ NOME: Pedro Henrique Araujo Farias
 <h2>Comprovando êxito nos resultados obtidos</h2>
 <p>A abordagem convencional para o problema da multiplicação matriz-vetor é tratar o vetor como uma <strong>matriz de colunas</strong> e, então, realizar a multiplicação destas.</p>
 <p>Todavia, essa abordagem resulta também em uma matriz de colunas, a qual se trata de um <strong>vetor bidimensional</strong>. De modo a obter como resultado um <strong>vetor unidimensional</strong>, a abordagem utilizada neste algoritmo não considera o vetor como uma matriz de colunas.</p>
-<p>É necessário explicitar esse fato pois, nas calculadoras <i>online</i>, foi necessário tornar o vetor uma matriz de colunas. Portanto, <strong>considere o vetor [a, b, c] correspondente à matriz {{1}, {2}, {3}}</strong>.</p>
+<p>É necessário explicitar esse fato pois, nas calculadoras <i>online</i>, foi necessário tornar o vetor uma matriz de colunas. Portanto, <strong>considere o vetor unidimensional [a, b, c] correspondente à matriz (vetor bidimensional) de colunas {{a}, {b}, {c}}</strong>.</p>
 
 <h3>Operação realizada</h3>
 <img src="https://raw.githubusercontent.com/K4NS0KUSH4/SOsV01D/main/PthreadsParte1/assets/operacaomultmatriz.png" alt="Operação de multiplicação de matrizes.">
