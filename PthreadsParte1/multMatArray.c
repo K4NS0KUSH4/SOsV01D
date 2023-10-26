@@ -12,8 +12,7 @@ int matrix[3][4] = {
 };
 
 int array[4] = {1, 2, 3, 4};
-int matrixLines = sizeof(matrix)/sizeof(matrix[0]);
-int matrixColumns = sizeof(matrix[0])/sizeof(int);
+
 int result[3];
 
 void* Pth_mat_vect(void* threadNum) {
@@ -24,6 +23,8 @@ void* Pth_mat_vect(void* threadNum) {
     for(int i = 0; i < arrayLength; i++) {
         result[resultElement] += matrix[resultElement][i] * array[i];
     }
+
+    printf("Elemento de índice %ld calculado pela Thread %ld: %d\n", resultElement, threadNum, result[resultElement]);
 
     return NULL;
 }
@@ -38,6 +39,8 @@ void printMatrix(int argLines, int argColumns, int argMatrix[argLines][argColumn
 }
 
 int main() {
+    int matrixLines = sizeof(matrix)/sizeof(matrix[0]);
+    int matrixColumns = sizeof(matrix[0])/sizeof(int);
     pthread_t* threadArray = malloc(matrixLines * sizeof(pthread_t));
 
     for(long line = 0; line < matrixLines; line++) {
@@ -48,9 +51,13 @@ int main() {
         pthread_join(threadArray[i], NULL);
     }
 
+    printf("\nVetor resultante da multiplicação matriz-vetor: \n");
+
     for(int k = 0; k < matrixLines; k++) {
 	    printf("%d ", result[k]);
     }
+
+    printf("\n");
 
     return 0;
 }
