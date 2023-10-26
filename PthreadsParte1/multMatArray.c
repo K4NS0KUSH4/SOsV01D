@@ -48,8 +48,8 @@ int main() {
         pthread_join(threadArray[i], NULL);
     }
 
-    for(int k = 0; k < matrixColumns; k++) {
-	printf("%d ", result[k]);
+    for(int k = 0; k < matrixLines; k++) {
+	    printf("%d ", result[k]);
     }
 
     return 0;
