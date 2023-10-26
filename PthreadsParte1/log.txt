@@ -1,0 +1,16 @@
+Matriz exemplo: 
+1 2 3 4 5 
+2 3 4 5 6 
+3 4 5 6 7 
+4 5 6 7 8 
+5 6 7 8 9 
+
+Vetor exemplo: 1 2 3 4 5 
+
+Elemento de índice 4 calculado pela Thread 4: 115
+Elemento de índice 3 calculado pela Thread 3: 100
+Elemento de índice 2 calculado pela Thread 2: 85
+Elemento de índice 1 calculado pela Thread 1: 70
+Elemento de índice 0 calculado pela Thread 0: 55
+
+Vetor resultante da multiplicação matriz-vetor: 55 70 85 100 115 
