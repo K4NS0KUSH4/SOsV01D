@@ -3,7 +3,7 @@
 NOME: Pedro Henrique Araujo Farias
 
 <h2>Evidências de compilação e execução das atividades no ambiente AWS</h2>
-<img src="https://raw.githubusercontent.com/K4NS0KUSH4/SOsV01D/main/PthreadsParte1/assets/pthreads1compilacao.png" alt="Compilação e execução dos arquivos no ambiente AWS.">
+<img src="https://github.com/K4NS0KUSH4/SOsV01D/blob/main/Lab03PthreadsParte1/assets/pthreads1compilacao.png" alt="Compilação e execução dos arquivos no ambiente AWS.">
 
 <h2>Comprovando êxito nos resultados obtidos</h2>
 <p>A abordagem convencional para o problema da multiplicação matriz-vetor é tratar o vetor como uma <strong>matriz de colunas</strong> e, então, realizar a multiplicação destas.</p>
@@ -11,13 +11,13 @@ NOME: Pedro Henrique Araujo Farias
 <p>É necessário explicitar esse fato pois, nas calculadoras <i>online</i>, foi necessário tornar o vetor uma matriz de colunas. Portanto, <strong>considere o vetor unidimensional [a, b, c] correspondente à matriz (vetor bidimensional) de colunas {{a}, {b}, {c}}</strong>.</p>
 
 <h3>Operação realizada</h3>
-<img src="https://raw.githubusercontent.com/K4NS0KUSH4/SOsV01D/main/PthreadsParte1/assets/operacaomultmatriz.png" alt="Operação de multiplicação de matrizes.">
+<img src="https://github.com/K4NS0KUSH4/SOsV01D/blob/main/Lab03PthreadsParte1/assets/operacaomultmatriz.png" alt="Operação de multiplicação de matrizes.">
 
 <h3>Resultado obtido na multiplicação de matrizes</h3>
-<img src="https://raw.githubusercontent.com/K4NS0KUSH4/SOsV01D/main/PthreadsParte1/assets/resultmultmatriz.png" alt="Resultado da multiplicação de matrizes.">
+<img src="https://github.com/K4NS0KUSH4/SOsV01D/blob/main/Lab03PthreadsParte1/assets/resultmultmatriz.png" alt="Resultado da multiplicação de matrizes.">
 
 <h3>Resultado obtido na execução do algoritmo desenvolvido</h3>
-<img src="https://raw.githubusercontent.com/K4NS0KUSH4/SOsV01D/main/PthreadsParte1/assets/resultalgoritmo.png" alt="Resultado da execução do código desenvolvido.">
+<img src="https://github.com/K4NS0KUSH4/SOsV01D/blob/main/Lab03PthreadsParte1/assets/resultalgoritmo.png" alt="Resultado da execução do código desenvolvido.">
 
 <h3>Interpretando os resultados</h3>
 <p>Como comentado anteriormente, embora a abordagem convencional da multiplicação matriz-vetor resulte em uma matriz de colunas, optou-se por obter o resultado em um <strong>vetor unidimensional</strong>.</p>
