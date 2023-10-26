@@ -40,7 +40,7 @@ void printMatrix(int argLines, int argColumns, int argMatrix[argLines][argColumn
     }
 }
 
-int main() {
+int main(void) {
     int matrixLines = sizeof(matrix)/sizeof(matrix[0]);
     int matrixColumns = sizeof(matrix[0])/sizeof(int);
     pthread_t* threadArray = malloc(matrixLines * sizeof(pthread_t));
