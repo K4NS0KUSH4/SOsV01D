@@ -5,15 +5,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int matrix[3][4] = {
-    {1, 2, 3, 4},
-    {5, 6, 7, 8},
-    {9, 10, 11, 12}
+int matrix[2][3] = {
+    {1, -1, 2},
+    {0, -3, 1}
 };
 
-int array[4] = {1, 2, 3, 4};
+int array[3] = {2, 1, 0};
 
-int result[3];
+int result[2];
 
 void* Pth_mat_vect(void* threadNum) {
     long resultElement = (long) threadNum;
