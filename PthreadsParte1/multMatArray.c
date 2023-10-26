@@ -42,22 +42,31 @@ int main() {
     int matrixLines = sizeof(matrix)/sizeof(matrix[0]);
     int matrixColumns = sizeof(matrix[0])/sizeof(int);
     pthread_t* threadArray = malloc(matrixLines * sizeof(pthread_t));
+    int numOfThreads = sizeof(threadArray)/sizeof(pthread_t);
 
-    for(long line = 0; line < matrixLines; line++) {
+    printf("Matriz exemplo: \n");
+    printMatrix(matrixLines, matrixColumns, matrix);
+
+    printf("Vetor exemplo: [");
+    for(int l = 0; l < numOfThreads; l++) {
+        printf("%d ", array[l]);
+    }
+
+    for(long line = 0; line < numOfThreads; line++) {
         pthread_create(&threadArray[line], NULL, Pth_mat_vect, (void*) line);
     }
 
-    for(int i = 0; i < matrixLines; i++) {
+    for(int i = 0; i < numOfThreads; i++) {
         pthread_join(threadArray[i], NULL);
     }
 
-    printf("\nVetor resultante da multiplicação matriz-vetor: \n");
+    printf("]\nVetor resultante da multiplicação matriz-vetor: [");
 
     for(int k = 0; k < matrixLines; k++) {
 	    printf("%d ", result[k]);
     }
 
-    printf("\n");
+    printf("]\n");
 
     return 0;
 }
