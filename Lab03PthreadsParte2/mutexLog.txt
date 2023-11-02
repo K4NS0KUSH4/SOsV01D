@@ -1,10 +1,34 @@
 Número de threads: 10
 Valor de PI calculado: 3.1415462779
 
+Número de threads: 10
+Valor de PI calculado: 3.1415462779
+
+Número de threads: 10
+Valor de PI calculado: 3.1415462779
+
+Número de threads: 100
+Valor de PI calculado: 3.1415464421
+
+Número de threads: 100
+Valor de PI calculado: 3.1415464421
+
 Número de threads: 100
 Valor de PI calculado: 3.1415464421
 
 Número de threads: 1000
+Valor de PI calculado: 3.1415464438
+
+Número de threads: 1000
+Valor de PI calculado: 3.1415464438
+
+Número de threads: 1000
+Valor de PI calculado: 3.1415464438
+
+Número de threads: 10000
+Valor de PI calculado: 3.1415464438
+
+Número de threads: 10000
 Valor de PI calculado: 3.1415464438
 
 Número de threads: 10000
