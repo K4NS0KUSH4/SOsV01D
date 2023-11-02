@@ -16,7 +16,7 @@ NOME: Pedro Henrique Araujo Farias
 <h2>Evidência da geração dos <code>logs.txt</code> no ambiente AWS</h2>
 <img src="https://github.com/K4NS0KUSH4/SOsV01D/blob/main/Lab03PthreadsParte2/assets/evidenciaLogsAWS.png" alt="Geração de logs no ambiente AWS">
 
-<h2>Sobre o laboratório</h2>
+<h2>Sobre o algoritmo proposto</h2>
 <p>O algoritmo proposto vale-se da <a href="https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80">série de Leibniz</a> para calcular uma aproximação do valor de Pi. Para calcular os seus diversos termos para obter uma aproximação satisfatória do valor de Pi, estabeleceu-se neste algoritmo que <strong>cada <i>thread</i> calculará 30000 termos da série</strong>.</p>
 
 <h2>Questões propostas</h2>
