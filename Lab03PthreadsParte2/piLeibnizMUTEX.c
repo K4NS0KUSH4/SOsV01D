@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     pthread_mutex_init(&mutex, NULL);
 
     for (long thread = 0; thread < numOfThreads; thread++) {
-        pthread_create(&threadArray[thread], NULL, leibnizSeries, (void *)thread);
+        pthread_create(&threadArray[thread], NULL, leibnizSeries, (void*) thread);
     }
 
     for (int i = 0; i < numOfThreads; i++) { pthread_join(threadArray[i], NULL); }
@@ -30,14 +30,14 @@ int main(int argc, char *argv[]) {
     double pi = 4 * sum;
     pthread_mutex_destroy(&mutex);
     free(threadArray);
-    
+
     printf("Número de threads: %d\nValor de PI calculado: %.20lf\n", numOfThreads, pi);
 
     return 0;
 }
 
 void *leibnizSeries(void *threadNum) {
-    long idThread = (long)threadNum;
+    long idThread = (long) threadNum;
     double factor;
     long firstTerm = idThread * termsPerThread;
     long lastTerm = firstTerm + termsPerThread;

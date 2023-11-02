@@ -20,12 +20,13 @@ int main(int argc, char *argv[]) {
     pthread_t *threadArray = malloc(numOfThreads * sizeof(pthread_t));
 
     for (long thread = 0; thread < numOfThreads; thread++) {
-        pthread_create(&threadArray[thread], NULL, leibnizSeries, (void *)thread);
+        pthread_create(&threadArray[thread], NULL, leibnizSeries, (void*) thread);
     }
 
     for (int i = 0; i < numOfThreads; i++) { pthread_join(threadArray[i], NULL); }
 
     double pi = 4 * sum;
+    free(threadArray);
 
     printf("Número de threads: %d\nValor de PI calculado: %.20lf\n", numOfThreads, pi);
 
@@ -33,7 +34,7 @@ int main(int argc, char *argv[]) {
 }
 
 void *leibnizSeries(void *threadNum) {
-    long idThread = (long)threadNum;
+    long idThread = (long) threadNum;
     double factor;
     long firstTerm = idThread * termsPerThread;
     long lastTerm = firstTerm + termsPerThread;
