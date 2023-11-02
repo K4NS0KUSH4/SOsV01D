@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
 
     double pi = 4 * sum;
 
-    printf("Valor: %lf\n", pi);
+    printf("Valor: %.20lf\n", pi);
 
     return 0;
 }
