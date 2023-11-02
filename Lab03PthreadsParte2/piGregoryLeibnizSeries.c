@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
     termsPerThread = strtol(argv[2], NULL, 10);
     pthread_t* threadArray = malloc(numOfThreads * sizeof(pthread_t));
 
-    for(int thread = 0; thread < numOfThreads; thread++) {
+    for(long thread = 0; thread < numOfThreads; thread++) {
         pthread_create(&threadArray[thread], NULL, gregoryLeibnizSeries, (void*) thread);
     }
 
