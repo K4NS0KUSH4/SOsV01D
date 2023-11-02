@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
     double pi = 4 * sum;
     free(threadArray);
 
-    printf("Número de threads: %d\nValor de PI calculado: %.20lf\n", numOfThreads, pi);
+    printf("Número de threads: %d\nValor de PI calculado: %.10lf\n", numOfThreads, pi);
 
     return 0;
 }
