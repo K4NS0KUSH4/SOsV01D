@@ -8,7 +8,7 @@
 double sum = 0;
 int termsPerThread;
 
-void* gregoryLeibnizSeries(void* threadNum);
+void* leibnizSeries(void* threadNum);
 
 int main(int argc, char* argv[]) {
     if(argc != 3) {
@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
     pthread_t* threadArray = malloc(numOfThreads * sizeof(pthread_t));
 
     for(long thread = 0; thread < numOfThreads; thread++) {
-        pthread_create(&threadArray[thread], NULL, gregoryLeibnizSeries, (void*) thread);
+        pthread_create(&threadArray[thread], NULL, leibnizSeries, (void*) thread);
     }
 
     for(int i = 0; i < numOfThreads; i++) { pthread_join(threadArray[i], NULL); }
@@ -33,7 +33,7 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
-void* gregoryLeibnizSeries(void* threadNum) {
+void* leibnizSeries(void* threadNum) {
     long idThread = (long) threadNum;
     double factor;
     long firstTerm = idThread * termsPerThread;
