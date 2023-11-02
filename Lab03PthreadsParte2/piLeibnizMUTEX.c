@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
     pthread_mutex_destroy(&mutex);
     free(threadArray);
 
-    printf("Número de threads: %d\nValor de PI calculado: %.10lf\n", numOfThreads, pi);
+    printf("Número de threads: %d\nValor de PI calculado: %.10lf\n\n", numOfThreads, pi);
 
     return 0;
 }
